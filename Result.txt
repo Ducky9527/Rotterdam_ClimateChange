@@ -1,3 +1,7 @@
+#     Filter Criteria
+# (1) the avg temp of the day was above 25C 
+# (2) the highest temp of the day was above 30C
+
 Year
 1982     4
 1983     2
