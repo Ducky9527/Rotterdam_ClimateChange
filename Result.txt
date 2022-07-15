@@ -44,7 +44,7 @@ Name: Year, dtype: int64
 # (1) the avg temp of the day was above 25C, and 
 # (2) the highest temp of the day was above 30C
 
-ear
+Year
 1989    1
 1994    2
 1995    2
