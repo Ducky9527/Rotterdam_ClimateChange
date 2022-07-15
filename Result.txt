@@ -1,5 +1,5 @@
-#     Filter Criteria
-# (1) the avg temp of the day was above 25C 
+#     Filter Criteria 1
+# (1) the avg temp of the day was above 25C, or 
 # (2) the highest temp of the day was above 30C
 
 Year
@@ -37,4 +37,30 @@ Year
 2019    11
 2020    11
 2022     1
+Name: Year, dtype: int64
+
+
+#     Filter Criteria 2
+# (1) the avg temp of the day was above 25C, and 
+# (2) the highest temp of the day was above 30C
+
+ear
+1989    1
+1994    2
+1995    2
+1997    1
+2000    2
+2003    1
+2004    1
+2006    3
+2010    1
+2011    1
+2012    1
+2013    2
+2014    2
+2015    1
+2016    1
+2018    3
+2019    4
+2020    7
 Name: Year, dtype: int64
