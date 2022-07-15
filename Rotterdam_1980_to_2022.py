@@ -24,14 +24,24 @@ df = df.drop(columns = ["STN", "TNH", "TXH"])
 df['Year'] = df['YYYYMMDD'].dt.year
 
 
+#filtering out the days that fulfill either of the two criteria
+dff_1 = df.loc[(df["TX"] > 300) | (df["TG"] > 250)]
+print(dff_1)
 
-# filtering out the days that fulfill either of the two criteria
-dff = df.loc[(df["TX"] > 300) | (df["TG"] > 250)]
-print(dff)
+#filtering out the days that fulfill the two criteria
+dff_2 = df.loc[(df["TX"] > 300) & (df["TG"] > 250)]
+print(dff_2)
 
-# count how many days each year(from 2000 to 2022 today) fulfill either of the two criteria  
-dff_count = dff.groupby(["Year"])["Year"].count()
-print(dff_count)
+
+#count how many days each year(from 1980 to 2022 today) fulfill either of the two criteria  
+dff_count_1 = dff_1.groupby(["Year"])["Year"].count()
+print(dff_count_1)
+
+
+#count how many days each year(from 1980 to 2022 today) fulfill the two criteria  
+dff_count_2 = dff_2.groupby(["Year"])["Year"].count()
+print(dff_count_2)
+
 
 
 
